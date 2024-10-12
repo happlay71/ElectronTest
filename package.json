@@ -1,0 +1,36 @@
+{
+  "name": "electron_test",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.atguigu.video",
+    "win": {
+      "icon": "./logo.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "author": "happlay71",
+  "license": "ISC",
+  "description": "Electron测试项目",
+  "devDependencies": {
+    "electron": "^32.2.0",
+    "electron-builder": "^25.1.7",
+    "nodemon": "^3.1.7"
+  }
+}
