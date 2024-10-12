@@ -1,0 +1,20 @@
+# 忽略 node_modules 目录（依赖包）
+node_modules/
+
+# 忽略构建输出目录（编译后的文件）
+dist/
+
+# 忽略锁定文件（可根据团队需求选择是否忽略）
+package-lock.json
+
+# 忽略日志文件
+*.log
+
+# 忽略环境变量文件
+.env
+
+# macOS 特有的系统文件
+.DS_Store
+
+# Windows 特有的系统文件
+Thumbs.db
